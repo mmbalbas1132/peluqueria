@@ -588,7 +588,7 @@
     <!-- Contenedor principal que contiene la flecha -->
     <div class="flecha container-fluid d-flex justify-content-md-end fixed-bottom">
         <!-- Flecha -->
-       <a href="#inicio"> <i class="bi bi-arrow-up-circle-fill" style="font-size: 5rem; cursor: pointer; margin-right: 2rem;"></i></a>
+       <a href="#inicio"> <i class="bi bi-arrow-up-circle-fill text-danger" style="font-size: 5rem; cursor: pointer; margin-right: 2rem;"></i></a>
     </div>
 </div>
     <script>
