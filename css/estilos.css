@@ -1,0 +1,129 @@
+:root {
+    --bs-blue: #037bc0;
+    /* cambio el valor por defecto del azul de bootstrap */
+}
+
+
+html {
+    font-size: 62.5% ; /*convierte un rem en 10px*/
+    scroll-behavior: smooth;
+}
+ 
+body {
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+   
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+@media (min-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    .mapa {
+        margin-top: 17rem;
+    }
+   
+}
+.mapa{
+    width: 90%;
+   margin-top: 25rem;
+    
+  }
+
+@media (max-width: 768px) {
+    .mapa {
+        margin-top: 3rem;
+    }
+}
+/* Reescribir colores */
+.text-primary, .nombre-sitio {
+    color: var(--bs-blue)!important;
+    /* asigno el valor de azul que creé en el root y le tengo que poner important para pasar por encima del color por default. No se deben usar important, `pero la forma de bootstrap obliga */
+}
+/*Los dos selectores siguientes sirven para que las fotos del slider se redimensionen centradas al hacer más pequeña la pantalla y que no se deformen*/
+.carousel-item {
+    position: relative;
+    height: 100%;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 100%;
+}
+
+ @media (min-width: 768px) {
+    .seccion {
+      height: 60vh;    
+    }
+  }  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .image-grid img {
+    max-width: 100%;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .image-grid img:hover {
+    transform: scale(3);
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+
+  .form-control{
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+
+  /*columnas de los servicios*/
+
+  .col-igual-altura {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-igual-altura > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .col-igual-altura > [class*='col-'] > .card {
+    flex: 1;
+  }
+
+  /* texto historia */
+  .extra-info {
+    transition: height 0.5s ease-in-out;
+  }
+  
+  
+
+  
+
+ 
+
+ 
